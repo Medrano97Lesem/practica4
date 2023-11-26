@@ -1,0 +1,9 @@
+extends master 
+block content 
+    form(action="/" method="POST" id="agregar-url")
+        legend AÑADE EL URL
+        .campo 
+            input(type="url" name="urloriginal" id="urloriginal" placeholder="Añade url"
+            required)
+        .campo.enviar 
+            input(type="submit" class="btn" value="Acortar")     
